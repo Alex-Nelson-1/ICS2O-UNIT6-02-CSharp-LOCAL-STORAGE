@@ -14,10 +14,10 @@ class Program
         Console.WriteLine("Do you want to end this program, y or n?");
         string text = Console.ReadLine();
         if (text == "n")
-        { 
+        {
             while (text == "n")
             {
-                 Console.WriteLine("Do you want to end this program, y or n?");
+                Console.WriteLine("Do you want to end this program, y or n?");
                 text = Console.ReadLine();
                 counter = counter + 1;
                 await File.WriteAllTextAsync("WriteText.txt", "you have said no " + counter + " times.");
@@ -33,7 +33,6 @@ class Program
         {
             Console.WriteLine("Please restart and choose y for yes, and n for no.");
         }
-            Console.WriteLine("\nDone");
-        
+        Console.WriteLine("\nDone");
     }
 }
