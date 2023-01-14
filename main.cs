@@ -1,27 +1,39 @@
 // Created by: Alex Nelson
-// Created on: Oct 2022
+// Created on: Jan 2022
 //
-// This program calculates area of a triangle
+// This program stores a local variable
 using System;
+using System.Threading.Tasks;
+using System.IO;
 
 class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main()
     {
-        //Input
-        int length;
-        int width;
-        int area;
-        Console.WriteLine("This program calculates the area of a triangle");
-        Console.WriteLine("");
-        Console.WriteLine("Enter length in cm: ");
-        length = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter width in cm: ");
-        width = Convert.ToInt32(Console.ReadLine());
-        area = length * width / 2;
-        //Output
-        Console.WriteLine("");
-        Console.WriteLine("The area is: " + area + " cm²");
-        Console.WriteLine("\nDone");
+        var counter = 1;
+        Console.WriteLine("Do you want to end this program, y or n?");
+        string text = Console.ReadLine();
+        if (text == "n")
+        { 
+            while (text == "n")
+            {
+                 Console.WriteLine("Do you want to end this program, y or n?");
+                text = Console.ReadLine();
+                counter = counter + 1;
+                await File.WriteAllTextAsync("WriteText.txt", "you have said no " + counter + " times.");
+                var said = await File.ReadAllTextAsync(@"WriteText.txt");
+                Console.WriteLine(said);
+            }
+        }
+        else if (text == "y")
+        {
+            Console.WriteLine("");
+        }
+        else 
+        {
+            Console.WriteLine("Please restart and choose y for yes, and n for no.");
+        }
+            Console.WriteLine("\nDone");
+        
     }
 }

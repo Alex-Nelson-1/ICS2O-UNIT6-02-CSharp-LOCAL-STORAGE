@@ -13,14 +13,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/runner/ICS2O-UNIT2-04-CSharp-AREA/main.csproj",
+      "projectUniqueName": "/home/runner/ICS2O-UNIT6-02-CSharp-LOCAL-STORAGE/main.csproj",
       "projectName": "main",
-      "projectPath": "/home/runner/ICS2O-UNIT2-04-CSharp-AREA/main.csproj",
+      "projectPath": "/home/runner/ICS2O-UNIT6-02-CSharp-LOCAL-STORAGE/main.csproj",
       "packagesPath": "/home/runner/.nuget/packages/",
-      "outputPath": "/home/runner/ICS2O-UNIT2-04-CSharp-AREA/obj/",
+      "outputPath": "/home/runner/ICS2O-UNIT6-02-CSharp-LOCAL-STORAGE/obj/",
       "projectStyle": "PackageReference",
-      "configFilePaths": ["/home/runner/.nuget/NuGet/NuGet.Config"],
-      "originalTargetFrameworks": ["netcoreapp6.0"],
+      "configFilePaths": [
+        "/home/runner/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp6.0"
+      ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -31,13 +35,22 @@
         }
       },
       "warningProperties": {
-        "warnAsError": ["NU1605"]
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
       "net6.0": {
         "targetAlias": "netcoreapp6.0",
-        "imports": ["net461", "net462", "net47", "net471", "net472", "net48"],
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
