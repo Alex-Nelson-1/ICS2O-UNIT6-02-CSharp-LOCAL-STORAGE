@@ -29,7 +29,7 @@ class Program
         {
             Console.WriteLine("");
         }
-        else 
+        else
         {
             Console.WriteLine("Please restart and choose y for yes, and n for no.");
         }
